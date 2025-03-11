@@ -66,3 +66,13 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+## Customizations
+
+### Outseta Integration
+This blog includes Outseta integration for authentication, forms, email lists, lead capture, and user profiles. The integration is automatically loaded on all pages through the BaseHead component. The Outseta configuration uses the following settings:
+
+- Domain: other-life.outseta.com
+- Loaded modules: auth, customForm, emailList, leadCapture, nocode, profile, support
+
+The integration script is included in the `<head>` section of every page via `src/components/BaseHead.astro`.

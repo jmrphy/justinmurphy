@@ -53,3 +53,12 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Outseta Integration -->
+<script is:inline>
+var o_options = {
+    domain: 'other-life.outseta.com',
+    load: 'auth,customForm,emailList,leadCapture,nocode,profile,support'
+};
+</script>
+<script is:inline src="https://cdn.outseta.com/outseta.min.js" data-options="o_options"></script>
