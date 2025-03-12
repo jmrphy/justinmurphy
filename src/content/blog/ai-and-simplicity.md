@@ -21,3 +21,19 @@ In fact, this very blog you're reading was created and deployed in about 10 minu
 This shift represents a broader trend: AI is pushing us "closer to the metal" because it handles the technical complexity that previously drove us toward simplified, managed platforms. The hard stuff becomes easy, and the limitations of third-party platforms become more apparent.
 
 While I have no grand ambitions for this particular site—it's purely a playground for experimentation—it represents an exciting shift in how we can approach content creation and web development. 
+
+<Image src="/bataille.png" alt="Bataille" width="800" height="auto" />
+
+<div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 2em; border-radius: 8px;">
+  <h2 style="text-align: center; margin-bottom: 0em;">Download the Bataille Study Guide</h2>
+  <div data-o-lead-capture="1"
+       data-form-uid="yW1y8OWB"
+       data-mode="embed">
+  </div>
+</div>
+<br><br>
+<div data-o-email-list="1" 
+     data-mode="embed" 
+     data-email-list-uid="LmJ3w6QP"
+     data-registration-field-configuration='[{"defaultValue":"","definition":{"SystemName":"Email"},"hidden":false}]'>
+</div>

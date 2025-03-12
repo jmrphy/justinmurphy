@@ -76,3 +76,17 @@ This blog includes Outseta integration for authentication, forms, email lists, l
 - Loaded modules: auth, customForm, emailList, leadCapture, nocode, profile, support
 
 The integration script is included in the `<head>` section of every page via `src/components/BaseHead.astro`.
+
+### Image Handling in Blog Posts
+This blog uses Astro's built-in image optimization features. For blog post images:
+
+- Place images in the `public/` directory
+- In markdown blog posts, use the Astro `Image` component:
+  ```astro
+  import { Image } from 'astro:assets';
+  
+  <Image src="/your-image.png" alt="Your Alt Text" width="800" height="auto" />
+  ```
+- The `width` and `height` attributes can be adjusted as needed
+- Images are automatically optimized by Astro for performance
+- No need to process or resize images manually before adding them to posts
