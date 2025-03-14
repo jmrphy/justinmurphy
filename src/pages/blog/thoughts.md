@@ -1,11 +1,13 @@
 ---
-title: 'AI and Simplicity'
-description: 'How artificial intelligence is transforming my approach to blogging and web development'
-pubDate: 'Mar 10 2024'
-heroImage: '/blog-placeholder-3.jpg'
----
+layout: "../../layouts/BlogPost.astro"
+title: "Thoughts"
+description: "Welcome to my new Astro blog"
+--- 
+
 
 I've been reflecting deeply on how AI is fundamentally changing everything in my workflow, particularly when it comes to blogging. Let me share a specific example that illustrates this transformation.
+
+## Hello
 
 Until recently, I've been running my blog on Ghost Pro's platform. I chose it primarily for its clean, intuitive interface and simplicity. However, the rise of AI has completely shifted this paradigm. What once seemed "easy to use" now feels like unnecessary friction.
 
