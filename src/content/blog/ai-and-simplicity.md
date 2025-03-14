@@ -22,10 +22,9 @@ This shift represents a broader trend: AI is pushing us "closer to the metal" be
 
 While I have no grand ambitions for this particular site—it's purely a playground for experimentation—it represents an exciting shift in how we can approach content creation and web development. 
 
-<Image src="/bataille.png" alt="Bataille" width="800" height="auto" />
-
 <div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 2em; border-radius: 8px;">
-  <h2 style="text-align: center; margin-bottom: 0em;">Download the Bataille Study Guide</h2>
+  <h2 style="text-align: center; margin-bottom: 1em;">Download the Bataille Study Guide</h2>
+  <center><Image src="/bataille.png" alt="Bataille" width="300" height="auto" /></center>
   <div data-o-lead-capture="1"
        data-form-uid="yW1y8OWB"
        data-mode="embed">

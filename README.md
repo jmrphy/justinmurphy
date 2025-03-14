@@ -82,11 +82,11 @@ This blog uses Astro's built-in image optimization features. For blog post image
 
 - Place images in the `public/` directory
 - In markdown blog posts, use the Astro `Image` component:
-  ```astro
-  import { Image } from 'astro:assets';
+  ```markdown
   
   <Image src="/your-image.png" alt="Your Alt Text" width="800" height="auto" />
   ```
+- You don't need to add """import { Image } from 'astro:assets';""" at the top
 - The `width` and `height` attributes can be adjusted as needed
 - Images are automatically optimized by Astro for performance
 - No need to process or resize images manually before adding them to posts
