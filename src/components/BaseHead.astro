@@ -1,18 +1,17 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
-import { SITE_TITLE } from '../consts';
+import "../styles/global.css";
+import { SITE_TITLE } from "../config";
 
-interface Props {
+export interface Props {
 	title: string;
 	description: string;
 	image?: string;
 }
 
+const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -62,3 +61,9 @@ var o_options = {
 };
 </script>
 <script is:inline src="https://cdn.outseta.com/outseta.min.js" data-options="o_options"></script>
+
+<style>
+	body {
+		margin: 0 auto !important;
+	}
+</style>
