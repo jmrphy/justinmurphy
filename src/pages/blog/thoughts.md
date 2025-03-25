@@ -1,40 +1,22 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "Thoughts"
-description: "Welcome to my new Astro blog"
+description: "Closer to the metal"
 --- 
 
+I don't intend to put very much on this site, but I threw up this blog structure anyway because it only took 10 minutes with AI coding.
 
-I've been reflecting deeply on how AI is fundamentally changing everything in my workflow, particularly when it comes to blogging. Let me share a specific example that illustrates this transformation.
+I've been running Other Life on the Ghost Pro platform. I chose it primarily for its clean, intuitive interface and simplicity. But interestingly AI has now killed that rationale: It's actually easier to maintain a custom web app because the whole surface area can be managed with AI. "Easy" GUIs are now less efficient!
 
-## Hello
-
-Until recently, I've been running my blog on Ghost Pro's platform. I chose it primarily for its clean, intuitive interface and simplicity. However, the rise of AI has completely shifted this paradigm. What once seemed "easy to use" now feels like unnecessary friction.
-
-The pendulum has swung towards custom-coded solutions that live locally on my machine. Why? Because AI has eliminated the technical barriers that previously made custom development daunting. With AI assistance, I can:
+I can:
 
 - Build and modify my site with simple natural language commands
 - Generate and publish content rapidly
-- Maintain complete control over my workflow
-- Eliminate unnecessary clicks and platform limitations
+- Maintain complete control over the website and workflows
+- Exceed any platform limitations
 
-In fact, this very blog you're reading was created and deployed in about 10 minutes. It lives entirely on my computer, and I can create dozens of new posts daily if I choose to. The process is streamlined to the point where I can simply tell the AI what I want, and it goes live.
+This blog lives on my Macbook and with one `git push` it goes live.
 
-This shift represents a broader trend: AI is pushing us "closer to the metal" because it handles the technical complexity that previously drove us toward simplified, managed platforms. The hard stuff becomes easy, and the limitations of third-party platforms become more apparent.
+AI is pushing us closer to the metal because it handles the technical complexity that previously drove us toward simplified, managed platforms. What was hard becomes easy, and what was easy becomes harder.
 
-While I have no grand ambitions for this particular site—it's purely a playground for experimentation—it represents an exciting shift in how we can approach content creation and web development. 
-
-<div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 2em; border-radius: 8px;">
-  <h2 style="text-align: center; margin-bottom: 1em;">Download the Bataille Study Guide</h2>
-  <center><Image src="/bataille.png" alt="Bataille" width="300" height="auto" /></center>
-  <div data-o-lead-capture="1"
-       data-form-uid="yW1y8OWB"
-       data-mode="embed">
-  </div>
-</div>
-<br><br>
-<div data-o-email-list="1" 
-     data-mode="embed" 
-     data-email-list-uid="LmJ3w6QP"
-     data-registration-field-configuration='[{"defaultValue":"","definition":{"SystemName":"Email"},"hidden":false}]'>
-</div>
+That said, I have no grand ambitions for this particular site, I'm not sure if I'll even put anything on here!

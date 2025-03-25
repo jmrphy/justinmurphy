@@ -1,14 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_SUB_TITLE } from '../config';
-import PostTile from '../components/PostTile.astro';
-import { mapPosts } from '../utils/post.utils';
-import { Astro } from 'astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
-// Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = await Astro.glob('./blog/*.{md,mdx}');
-const mappedPosts = mapPosts(posts).slice(0, 3);
 ---
 
 <!DOCTYPE html>
@@ -19,40 +13,36 @@ const mappedPosts = mapPosts(posts).slice(0, 3);
 	<body class="dark:bg-black text-black dark:text-white">
 		<Header />
 		<main>
-			<h2 class="font-bold text-xl mb-6 dark:text-white">
-				{SITE_SUB_TITLE}
-			</h2>
-
-			<div class="mb-8">
-				<p>
-					Here you can add some further information about yourself and
-					what you're doing. As well you can find more information <a
-						href="/about"
-						class="text-red-500 hover:text-red-700">about me</a
-					> on this page.
-				</p>
-			</div>
-
-			<div>
-				<h3 class="font-bold text-red-500 text-lg">Posts</h3>
-
-				<div class="grid grid-cols-1 gap-4 mt-3 mb-3">
-					{
-						mappedPosts.map((p) => (
-							<PostTile
-								url={p.url}
-								title={p.frontmatter.title}
-								description={p.frontmatter.description}
-								date={p.frontmatter.pubDate}
-							/>
-						))
-					}
+			<section class="mb-16">
+				<div class="relative">
+					<img src="/justin-murphy.jpg" alt="Justin Murphy" class="float-left w-32 h-32 rounded-lg mr-8 mb-4 object-cover" />
+					<p class="mb-4">
+						{SITE_TITLE} is a writer and independent scholar. He was a professor of Political Science for five years at the University of Southampton in the UK before going full-time as an independent scholar.<br></br>He runs the newsletter and podcast <a href="https://otherlife.co" class="text-red-500 hover:text-red-700"><i>Other Life</i></a>.<br></br>Most of his writing is over there but you will find <a href="/blog" class="text-red-500 hover:text-red-700">a few posts here.</a>
+					</p>
+					{/* <a href="/about" class="text-red-500 hover:text-red-700">Read full biography</a> */}
+					<div class="clear-both"></div>
 				</div>
+			</section>
+			{/* <section>
+				<h2 class="text-2xl font-bold mb-6">Books</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div>
+						<div class="w-full h-48 bg-gray-200 rounded-lg mb-4"></div>
+						<h3 class="text-xl font-bold mb-2">The Invisible Threads</h3>
+						<p class="text-gray-600 dark:text-gray-400 mb-2">Published 2023</p>
+						<p class="mb-4">A sweeping tale of family secrets spanning three generations and two continents. When Eliza discovers a hidden letter in her late grandmother's belongings, she embarks on a journey that will challenge everything she thought she knew about her family's history.</p>
+						<a href="#" class="text-red-500 hover:text-red-700">Learn More</a>
+					</div>
 
-				<a href="/blog" class="text-red-500 hover:text-red-700"
-					>See all posts</a
-				>
-			</div>
+					<div>
+						<div class="w-full h-48 bg-gray-200 rounded-lg mb-4"></div>
+						<h3 class="text-xl font-bold mb-2">Echoes of Tomorrow</h3>
+						<p class="text-gray-600 dark:text-gray-400 mb-2">Published 2015</p>
+						<p class="mb-4">The award-winning debut that launched {SITE_TITLE}'s career. This intimate portrait of a woman reconciling her past with her present explores themes of memory, identity, and the power of human connection in an increasingly disconnected world.</p>
+						<a href="#" class="text-red-500 hover:text-red-700">Learn More</a>
+					</div>
+				</div>
+			</section> */}
 		</main>
 	</body>
 </html>
